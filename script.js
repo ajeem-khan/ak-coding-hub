@@ -1,7 +1,6 @@
 function copyCode(id) {
     let code = document.getElementById(id).innerText;
     navigator.clipboard.writeText(code);
-
     alert("✅ Code copied!");
 }
 
@@ -31,4 +30,9 @@ function filterCode(category) {
             cards[i].style.display = "none";
         }
     }
+}
+
+/* 🌙 Toggle Mode */
+function toggleMode() {
+    document.body.classList.toggle("light");
 }
