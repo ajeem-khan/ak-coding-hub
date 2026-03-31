@@ -17,3 +17,17 @@ function searchCode() {
         }
     }
 }
+
+function filterCode(category) {
+    let cards = document.getElementsByClassName("code-card");
+
+    for (let i = 0; i < cards.length; i++) {
+        if (category === "all") {
+            cards[i].style.display = "block";
+        } else if (cards[i].classList.contains(category)) {
+            cards[i].style.display = "block";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
