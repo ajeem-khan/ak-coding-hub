@@ -1,50 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Azeem Website</title>
-
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-family: Arial;
-        }
-
-        h1 {
-            color: cyan;
-            font-size: 40px;
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        button {
-            background-color: yellow;
-            padding: 12px 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 10px;
-        }
-
-        button:hover {
-            background-color: orange;
-        }
-    </style>
-
+    <title>Azeem Code Hub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Welcome Azeem 🚀</h1>
+<h1>Azeem Code Hub 🚀</h1>
 
-    <p>यह मेरी पहली GitHub website है</p>
+<div class="code-card">
+    <h2>Python Heart Code ❤️</h2>
+    <p>Beautiful turtle heart animation</p>
 
-    <button onclick="alert('Hello Azeem 😎')">
-        Click Me
-    </button>
+    <button onclick="copyCode('code1')">Copy Code</button>
+
+    <pre id="code1">
+print("Hello Azeem ❤️")
+    </pre>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
