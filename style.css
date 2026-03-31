@@ -1,54 +1,87 @@
 body {
-    background: black;
+    margin: 0;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
     color: white;
     font-family: Arial;
     text-align: center;
 }
 
+/* Search bar */
 #search {
-    padding: 10px;
+    padding: 12px;
     width: 60%;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
+    outline: none;
 }
 
+/* Filters */
 .filters {
     margin: 20px;
 }
 
 .filters button {
     margin: 5px;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
     cursor: pointer;
-    background: orange;
+    background: #333;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 
+.filters button:hover {
+    background: cyan;
+    color: black;
+}
+
+/* Layout */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Card Design */
 .code-card {
-    background: #111;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     padding: 20px;
     margin: 15px;
-    border-radius: 10px;
-    width: 250px;
+    border-radius: 15px;
+    width: 260px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+/* Hover Animation 🔥 */
+.code-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 20px cyan;
+}
+
+/* Button */
 button {
     background: cyan;
     border: none;
-    padding: 8px;
+    padding: 8px 12px;
     cursor: pointer;
     margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
+button:hover {
+    background: white;
+    color: black;
+}
+
+/* Code box */
 pre {
-    background: #222;
+    background: #111;
     padding: 10px;
+    border-radius: 10px;
     overflow-x: auto;
 }
